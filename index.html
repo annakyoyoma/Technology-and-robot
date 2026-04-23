@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>STS Project</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f0ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+      background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&auto=format");
+      background-size: cover;
+      background-position: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      font-size: 42px;
+    }
+
+    .container, .section, .conclusion {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      background: linear-gradient(135deg, #ffffff, #f0e9ff);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4b0082;
+    }
+
+    li {
+      background: #f9f6ff;
+      margin-bottom: 12px;
+      padding: 15px;
+      border-left: 6px solid #7c3aed;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    li:hover {
+      background: #efe3ff;
+      transform: translateX(5px);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f5efff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(60, 0, 120, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      background: linear-gradient(135deg, #ffffff, #f3e8ff);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #6d28d9;
+    }
+
+    .robot-card {
+      background: #f5efff;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-left: 6px solid #a855f7;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .robot-card:hover {
+      transform: translateX(5px);
+      background: #efe3ff;
+    }
+
+    .iot {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 15px;
+      color: white;
+      background-image: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1600&auto=format");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .iot::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      border-radius: 15px;
+    }
+
+    .iot-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .iot h2 {
+      color: #e9d5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      background: #f0e9ff;
+      margin-top: 20px;
+    }
+
+    .info {
+      margin-top: 10px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+<div style="
+  text-align: center;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+">
+  <div style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">
+    📘 Science, Technology, and Society (STS)
+  </div>
+
+  Submitted by:<br>
+  <b>Baldago, Jober A.</b><br>
+  <b>Balhon, Abraham</b><br>
+
+  <div style="margin-top:10px; font-size:13px; opacity:0.9;">
+    BSIT Student Project
+  </div>
+</div>
+
+<header>
+  <h1>Technology in Modern Life</h1>
+</header>
+
+<div class="container">
+  <h2>What is Technology?</h2>
+  <ul>
+    <li>The practical application of scientific knowledge to create tools, machines, and systems that solve human problems and improve quality of life.</li>
+    <li>The word "technology" comes from the Greek words <i>techne</i> (art or skill) and <i>logos</i> (study or knowledge).</li>
+    <li>It evolved significantly during the Industrial Revolution, where machines replaced manual labor in many industries.</li>
+    <li>Today, technology continues to advance rapidly through innovation, research, and human creativity.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Technology We Use Today</h2>
+  <ol>
+    <li>Television</li>
+    <li>Mobile Phones</li>
+    <li>Laptops and Computers</li>
+  </ol>
+</div>
+
+<div class="section">
+  <h2>Definitions</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600&auto=format">
+      <div class="card-content">
+        <h3>Television</h3>
+        <p>
+          A television is an electronic device used to receive and display moving images and sound. It is widely used for
+          entertainment, education, news broadcasting, and communication. Television plays an important role in spreading
+          information to the public and shaping opinions. Modern smart TVs can connect to the internet, allowing users to
+          stream videos, access apps, and interact with online content.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format">
+      <div class="card-content">
+        <h3>Mobile Phones</h3>
+        <p>
+          Mobile phones are portable communication devices that allow people to make calls, send text messages, and access
+          the internet from almost anywhere. Modern smartphones include advanced features such as cameras, GPS navigation,
+          social media applications, and online learning tools. They have become essential in daily life for communication,
+          education, business transactions, and entertainment.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&auto=format">
+      <div class="card-content">
+        <h3>Laptops</h3>
+        <p>
+          A laptop is a portable personal computer designed for mobility and convenience. It contains all the components
+          of a desktop computer, including a screen, keyboard, processor, and battery, all in one compact device. Laptops
+          are commonly used for studying, working, programming, and online communication, making them essential tools in
+          education and professional environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format">
+      <div class="card-content">
+        <h3>Computers</h3>
+        <p>
+          Computers are electronic machines that process data, perform calculations, and execute tasks based on programmed
+          instructions. They are used in various fields such as education, business, healthcare, engineering, and entertainment.
+          Computers help people store information, solve complex problems, and perform tasks faster and more efficiently,
+          making them one of the most important inventions in modern society.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <h2>🤖 Robot</h2>
+
+  <ul>
+    <li>Came from the Czech word <b>"robota"</b>, meaning <b>"forced labor"</b>.</li>
+    <li>An actuated mechanism programmable in multiple axes with autonomy to perform tasks.</li>
+  </ul>
+
+  <h3 style="text-align:center; color:#4b0082;">Types of Robot</h3>
+
+  <div class="robot-card">
+    <b>Service Robot:</b>
+    <p>Performs useful tasks for humans and equipment such as factory robots, cleaning robots, and robot assistants.</p>
+  </div>
+
+  <div class="robot-card">
+    <b>Personal Service Robot:</b>
+    <p>Used by individuals for non-commercial tasks such as automated wheelchairs, home assistance robots, and personal helpers.</p>
+  </div>
+
+  <div class="robot-card">
+    <b>Professional Service Robot:</b>
+    <p>Used in professional or commercial environments such as surgical robots in hospitals, industrial robots in factories, and research robots.</p>
+  </div>
+</div>
+
+<div class="iot">
+  <div class="iot-content">
+    <h2>Internet of Things (IoT)</h2>
+    <p>
+      The Internet of Things (IoT) refers to a network of connected devices that communicate and exchange data through the internet.
+      These devices collect information, analyze it, and perform actions automatically without human intervention.
+    </p>
+    <p>
+      IoT is used in smart homes, healthcare systems, transportation, agriculture, and industries to improve efficiency, convenience,
+      and decision-making. It plays a major role in building smart cities and a more connected world.
+    </p>
+  </div>
+</div>
+
+<div class="conclusion">
+  <h2>Conclusion</h2>
+  <p>
+    Technology plays a vital role in shaping modern society by improving communication, education, transportation, and healthcare.
+    Innovations such as robotics and the Internet of Things (IoT) demonstrate how technology continues to evolve and integrate into
+    everyday life.
+  </p>
+  <p>
+    As technology advances, it is important for people to understand its impact on society and use it responsibly to create a better,
+    smarter, and more sustainable future for everyone.
+  </p>
+</div>
+
+<footer>
+  <div>© 2026 STS Project | Student Output</div>
+</footer>
+
+</body>
+</html>
